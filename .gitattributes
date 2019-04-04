@@ -1,3 +1,2 @@
 * text=auto
-*.cs linguist-vendored
-*.js linguist-vendored
+*.cs linguist-language=csharp
