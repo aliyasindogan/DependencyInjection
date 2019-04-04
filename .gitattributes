@@ -1,2 +1,2 @@
-*.cs linguist-language=Csharp
+* linguist-vendored
 *.js linguist-vendored=false
