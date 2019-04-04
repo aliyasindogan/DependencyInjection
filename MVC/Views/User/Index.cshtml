@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ENTITIES.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="text-center text-uppercase">Asp.Net Mvc Generic Repository ile <br />Dependency Injection Kullanımı</h1>
+    </div>
+</div>
+<div class="container">
+    <h3>Kullanıcı Listesi</h3>
+    <hr />
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="text-bold bg-secondary">Id</th>
+                <th class="text-bold bg-secondary">Adı</th>
+                <th class="text-bold bg-secondary">Soyadı</th>
+                <th class="text-bold bg-secondary">Email</th>
+                <th class="text-bold bg-secondary">Şifre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+
+                    <td>@item.Name</td>
+
+                    <td>@item.SurName</td>
+
+                    <td>@item.Email</td>
+
+                    <td>@item.Password</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    @*public int Id { get; set; }
+        public string Name { get; set; }
+        public string SurName { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }*@
+</div>
+
